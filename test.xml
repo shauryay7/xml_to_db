@@ -1,0 +1,32 @@
+<DBSchema Depends="" Name="OMDB">
+    <Entities>
+        <Entity TableName="YFS_ORDER_HEADER">
+            <Attributes>
+                <Attribute ColumnName="EXTN_SELLING_BRANCH" Nullable="true" DefaultValue="" Description="Branch booking the sale" Size="150" Type="VARCHAR2" XMLName="ExtnSellingBranch" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_PROJECT_NUMBER" Nullable="true" DefaultValue="" Description="Project Number" Size="150" Type="VARCHAR2" XMLName="ExtnProjectNumber" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_PROGRAM_NAME" Nullable="true" DefaultValue="" Description="Program Name" Size="150" Type="VARCHAR2" XMLName="ExtnProgramName" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_PROGRAM_NUMBER" Nullable="true" DefaultValue="" Description="Program Number" Size="100" Type="VARCHAR2" XMLName="ExtnProgramNumber" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_PROJECT_NAME" Nullable="true" DefaultValue="" Description="Project Name" Size="100" Type="VARCHAR2" XMLName="ExtnProjectName" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_IS_FIRST_SHIPMENT_PUBLISHED" Nullable="true" DefaultValue="" Description="Flag to check if first shipment is published" Size="2" Type="VARCHAR2" XMLName="ExtnIsFirstShipmentPublished" XMLGroup="Extn"/>
+                <!--START OO-787-->
+                <Attribute ColumnName="EXTN_ORDER_CONVERTED_FLAG" Nullable="true" DefaultValue="N" Description="Order Converted Flag" DataType="Flag" XMLName="ExtnOrderConvertedFlag" XMLGroup="Extn"/>
+                <!--END OO-787-->
+                <!--OO-1206 JIRA-->
+                <Attribute ColumnName="EXTN_IS_FIRST_RECEIPT_PUBLISHED" Nullable="true" DefaultValue="" Description="Flag to check if first Receipt is published" Size="2" Type="VARCHAR2" XMLName="ExtnIsFirstReceiptPublished" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_RETURN_TYPE" Nullable="true" DefaultValue="" Description="Return Type" Size="100" Type="VARCHAR2" XMLName="ExtnReturnType" XMLGroup="Extn"/>
+                <Attribute ColumnName="EXTN_ORDER_TYPE" Nullable="true" DefaultValue="" Description="Order Type" Size="100" Type="VARCHAR2" XMLName="ExtnOrderType" XMLGroup="Extn"/>
+                <!--START OO-2693-->
+                <Attribute ColumnName="EXTN_EDI_ASN_INDICATOR" DataType="Flag" Description="EDI ASN Indicator" Nullable="true" DefaultValue="N" XMLName="ExtnEDIASNIndicator" XMLGroup="Extn"/>
+                <!--END OO-2693-->
+                <!--START OO-2923-->
+                <Attribute ColumnName="EXTN_PROJECT_STATUS" Nullable="true" DefaultValue="" Description="" Size="50" Type="VARCHAR2" XMLName="ExtnProjectStatus" XMLGroup="Extn"/>
+                <!--END OO-2923-->
+            </Attributes>
+            <Indices>
+                <Index Name="OHDR_DAT_EXTR_I1">
+                    <Column Name="MODIFYTS"/>
+                </Index>
+            </Indices>
+        </Entity>
+    </Entities>
+</DBSchema>

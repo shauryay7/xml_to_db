@@ -7,7 +7,7 @@ from pprint import pprint
 
 
 def parse_element(element, class_definitions):
-    """Recursively parse an XML element to extract class and field structures."""
+
     class_name = element.tag.capitalize()
     fields = defaultdict(str)
 

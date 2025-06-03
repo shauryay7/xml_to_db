@@ -22,4 +22,4 @@ This is especially useful for working with systems that export database definiti
 
 ## To Run
 
-python xml_to_mongo.py sample.xml --mongo
+``` python xml_to_mongo.py sample.xml --mongo ```
